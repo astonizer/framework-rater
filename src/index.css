@@ -1,0 +1,84 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: rgb(226, 221, 221);
+}
+
+/*Header styling*/
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/background.jpg');
+    height: 412px;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.icons {
+    margin-right: 99px;
+}
+
+.icons img {
+    padding: 3px;
+    margin: 20px 10px;
+    background: rgb(230, 217, 217);
+    border-radius: 50%;
+}
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+.heading {
+    padding: 14px;
+    padding-top: 95px;
+}
+
+.heading h1 {
+    padding: 4px 13px;
+    margin-bottom: 64px;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading .heading_details {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Body styling*/
+.home {
+    text-align: center;
+    padding: 13px 4px;
+    background: #cabebe;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+}
+
+.home span {
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 16px;
+}
+
+.home .options {
+    padding: 40px;
+    margin: 23px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.home .options a {
+    text-decoration: none;
+    color: black;
+    margin: 19px;
+    background: #b39c9c;
+    padding: 37px;
+    font-size: 1.5em;
+    transition: all .2s ease-in-out;
+}
+
+.home .options a:hover {
+    background: #8b6c6c;
+    transform: scale(1.07);
+}
