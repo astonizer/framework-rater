@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './components/Home'
 
-function App{
+function App() {
   return (
     <div className="container">
       <Home />
