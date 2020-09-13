@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import data from '../../data/data.json'
 
-function DataProvider(props) {
+function RaterProvider(props) {
     const [frames, setFrames] = useState([]);
     //const lang = props.match.params.lang;
     const langData = []
@@ -24,4 +24,4 @@ function DataProvider(props) {
     )
 }
 
-export default DataProvider
+export default RaterProvider
