@@ -1,13 +1,21 @@
 import React, { useState } from 'react'
 
-function Rater(props) {
-    const [frames, setFrames] = useState({});
-    console.log(props.match.params.lang)
+function DataProvider({ frameworks }) {
+    const list = frameworks.map(frame => {
+        return frame.githubStars !== null ? (
+            <div className="bar-content" key={frame.id}>
+                <span className="brand">{frame.id}</span>
+                <span className="bar">{frame.githubStars}</span>
+            </div>
+        ) : (
+            <div>Error fetching data</div>
+        )
+    })
     return (
-        <div className='rater-body'>
-            This is the rater
-        </div>
+        <section className="chart">
+            { frameworks.length &&  list }
+        </section>
     )
 }
 
-export default Rater
+export default DataProvider
