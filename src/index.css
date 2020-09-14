@@ -68,7 +68,7 @@ html, body {
     grid-template-columns: auto auto auto;
 }
 
-.home .options a {
+.home .options button {
     text-decoration: none;
     color: black;
     margin: 19px;
@@ -76,9 +76,44 @@ html, body {
     padding: 37px;
     font-size: 1.5em;
     transition: all .2s ease-in-out;
+    border: none;
 }
 
-.home .options a:hover {
+.home .options button:hover {
     background: #8b6c6c;
     transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+.chart {
+  max-width: 940px;
+}
+.chart > div {
+  float: left;
+  margin-bottom: 26px;
+  width: 100%;
+  border-bottom: 1px solid gray; 
+}
+
+.chart .brand { 
+  float: left;
+  margin-top: 18px;
+  width: 20px;
+  animation: fade-in-text 2.2s 0.6s forwards;
+}
+
+.chart .bar {
+  position: relative;
+  top: 28px;
+  left: 4px;
+}
+
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
